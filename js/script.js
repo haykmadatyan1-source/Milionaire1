@@ -9,7 +9,7 @@ let mainGame = document.querySelector('.game-block'),
  helpBtns = document.querySelectorAll('.hints-help'),
  winBlock = document.querySelectorAll('.wins-block'),
  helpFifty = document.querySelector('.fifty-fifty'),
- helpHall = document.querySelecto('.hall-help'),
+ helpHall = document.querySelector('.hall-help'),
  helpFriend = document.querySelector('.call-friend'),
  helpAI = document.querySelector('.ai-help'),
  game = document.querySelector('.game')
@@ -18,3 +18,80 @@ let mainGame = document.querySelector('.game-block'),
 let changeQuestion = document.getElementById('hintBox')
 let extraQuestion = document.getElementById('extra')
 let flagExtra = true
+
+
+let endB = document.getElementById('end')
+
+const popup = document.getElementById('rulesPopup')
+const showBtn = document.getElementById('showRules')
+
+let aiExplainBlock = document.getElementById('aiExplainBlock')
+let aiExplainText = document.getElementById('aiExplaintext')
+let aiExplainClose = document.getElementById('aiExplainClose')
+
+const OPEN_AI_KEY = ''
+const OPENAI_MODEL = ''
+
+
+
+
+showBtn.addEventListener('click', () => {
+ popup.classList.add("show")
+})
+
+popup.addEventListener('click', () => {
+ popup.classList.remove("show")
+})
+
+const generalMusic = new Audio('./music/end-sound.mp3')
+const questionSong = new Audio('./music/questions-sound.mp3')
+let count = 0
+let fixed1 = new Audio('./music/8,000-question.mp3')
+
+let incorrectSoundFlag = false
+
+generalMusic.loop = true
+window.addEventListener('click', () => {
+ generalMusic.play()
+}, { once: true })
+
+
+endBtn.addEventListener('click', () => {
+ setTimeout(() => {
+  game.style.backgroundImage = ""
+ }, 2000)
+ questionSong.pause()
+ mainGame.classList.remove('animate__backInUP')
+ mainGame.classList.remove('animate__flipInX')
+ mainGame.classList.add('animate__animated', 'animate__backOutDown')
+
+ setTimeout(() => {
+  mainGame.style.display = 'none'
+  startBtn.style.display = 'block'
+  startBtn.classList.remove('animate__backOutUp')
+  startBtn.classList.add('animate__backInDown')
+
+ }, 1000)
+
+ setTimeout(() => {
+  startBtn.classList.remove('animate__backInDown')
+ }, 2000)
+
+
+ let userWin = document.querySelector('.user-win')
+
+ /////////
+})
+
+
+
+startBtn.addEventListener('click', () => {
+ generalMusic.pause()
+ generalMusic.currentTime = 0
+ game.style.backgroundImage = "url('./img/galaxy.jpg')"
+ game.style.backgroundSize = "100%"
+
+ startBtn.classList.add('animate__animated','animate__backOutUp')
+ startBtn.classList.remove('animate__backOutDown')
+ showBtn.remove()
+})
