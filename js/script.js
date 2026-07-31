@@ -395,12 +395,8 @@ function correctnessAnswer(numberQuestion, userAnswer, blockAnswer, blockQuestio
         incorrectSound.play();
     }
     // Եթե պատասխանը ճիշտ է, ապա բլոկը կանաչ կներկվի  
-    console.log(answers[numberQuestion]);
-    console.log(userAnswer);
     
     
-
-
     if (answers[numberQuestion] == userAnswer) {
 
         setTimeout(() => {
@@ -630,7 +626,7 @@ function checkBlockChild(parentBlock) {
   }
 
 const answers = {
-    question_1: 'Գ․ Փողային',
+    question_1: 'Գ. Փողային',
     question_2: 'Դ․ Լաջվարդակուրծք',
     question_3: 'Բ․ Իլիական',
     question_4: 'Գ․ Կիսակղզի',
