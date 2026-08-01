@@ -626,21 +626,21 @@ function checkBlockChild(parentBlock) {
   }
 
 const answers = {
-    question_1: 'Գ. Փողային',
-    question_2: 'Դ․ Լաջվարդակուրծք',
-    question_3: 'Բ․ Իլիական',
-    question_4: 'Գ․ Կիսակղզի',
-    question_5: 'Ա․ Սուրը',
-    question_6: 'Գ․ Մակարդ',
-    question_7: 'Գ․ Հելիում',
-    question_8: 'Գ․ «Արկտիկա»',
-    question_9: 'Բ․ Նախանձել',
-    question_10: 'Բ․ Սպլիտ',
-    question_11: 'Բ․ Արմին Խարի',
-    question_12: 'Ա․ 1914',
-    question_13: 'Գ․ Իսպանիա',
-    question_14: 'Ա․ Հնդիկ',
-    question_15: 'Բ․ Պերու',
-    question_extra: 'Դ․ Երազների'
+    question_1: 'Գ. Կարին',
+    question_2: 'Դ․ Թոք',
+    question_3: 'Գ․ Ֆունտ ստեռլինգ',
+    question_4: 'Ա․ Google',
+    question_5: 'Բ․ Փարիզ',
+    question_6: 'Բ․ Երկաթ',
+    question_7: 'Դ․ Սև մարգարիտ',
+    question_8: 'Բ․ Աշոտ Երկաթ',
+    question_9: 'Դ․ ֆրանց Վերֆել',
+    question_10: 'Բ․ 27 օր',
+    question_11: 'Դ․ 15-ից ավելի',
+    question_12: 'Ա․ Ֆիլիպինյան ծով',
+    question_13: 'Գ․ 8',
+    question_14: 'Ա․ 12',
+    question_15: 'Գ․ Ռիխտերի սանդղակ',
+    question_extra: 'Բ. A'
 
 };
